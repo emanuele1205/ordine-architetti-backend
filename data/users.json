@@ -1,0 +1,190 @@
+[
+  {
+    "_id": "2",
+    "email": "laura.bianchi@test.it",
+    "password": "$2a$12$3JT6DaKyrB7ctrQvY6OFEe11028WPD3jDsFrz28QfTDZ19ZLNPrqq",
+    "firstName": "Laura",
+    "lastName": "Bianchi",
+    "userType": "architect",
+    "orderNumber": "5678",
+    "phone": "+39 0934 654321",
+    "language": "it",
+    "isVerified": true,
+    "activationToken": "TOKEN-ARCH-5678-2025",
+    "settings": {
+      "notifications": true,
+      "emailNotifications": false,
+      "theme": "light",
+      "language": "it",
+      "privacy": {
+        "showEmail": false,
+        "showPhone": true,
+        "showProjects": true
+      }
+    },
+    "createdAt": "2024-02-20T00:00:00.000Z",
+    "isActive": true,
+    "lastLogin": "2026-03-03T16:48:51.772Z",
+    "updatedAt": "2026-03-03T17:12:45.868Z",
+    "emailVerified": true,
+    "passwordResetToken": null,
+    "passwordResetExpires": null
+  },
+  {
+    "_id": "3",
+    "email": "giuseppe.verdi@test.it",
+    "password": "$2a$12$IgsXH.kKcqhvZTH2akDF0e4HkgzvI0oh0/b.Fx.iGRdmJALHiAH/q",
+    "firstName": "Giuseppe",
+    "lastName": "Verdi",
+    "userType": "architect",
+    "phone": "+39 333 123456788",
+    "language": "en",
+    "isVerified": true,
+    "settings": {
+      "notifications": true,
+      "emailNotifications": true,
+      "theme": "dark",
+      "language": "en",
+      "privacy": {
+        "showEmail": true,
+        "showPhone": true,
+        "showProjects": true
+      }
+    },
+    "createdAt": "2024-03-10T00:00:00.000Z",
+    "isActive": true,
+    "lastLogin": "2026-03-03T01:55:49.098Z",
+    "updatedAt": "2026-03-03T01:55:49.098Z",
+    "orderNumber": "1234"
+  },
+  {
+    "_id": "b8705db6c22a3fb9",
+    "email": "test.user.2025@test.it",
+    "password": "$2b$10$mRRNhExvrjRR39SBf1rD9uDx4bgGvdgzrie6UJTMHbbVOOuv7GZ0K",
+    "firstName": "Test",
+    "lastName": "User",
+    "phone": null,
+    "userType": "registered",
+    "isVerified": false,
+    "isActive": true,
+    "language": "it",
+    "settings": {
+      "notifications": true,
+      "emailNotifications": true,
+      "theme": "light",
+      "language": "it",
+      "privacy": {
+        "showEmail": false,
+        "showPhone": false,
+        "showProjects": true
+      }
+    },
+    "createdAt": "2026-03-03T01:18:33.967Z",
+    "updatedAt": "2026-03-03T01:55:49.170Z",
+    "lastLogin": "2026-03-03T01:55:49.170Z"
+  },
+  {
+    "_id": "973c92cb8e734b37",
+    "email": "test1772502705@test.com",
+    "password": "$2a$12$u1NY0lUzvoT/nBTnwwC3iOBySgk2A5cBjj3h5FO4DNfrHKxzp2Kqy",
+    "firstName": "Test",
+    "lastName": "User",
+    "phone": null,
+    "userType": "registered",
+    "isVerified": false,
+    "isActive": true,
+    "language": "it",
+    "settings": {
+      "notifications": true,
+      "emailNotifications": true,
+      "theme": "light",
+      "language": "it",
+      "privacy": {
+        "showEmail": false,
+        "showPhone": false,
+        "showProjects": true
+      }
+    },
+    "createdAt": "2026-03-03T01:51:46.187Z",
+    "updatedAt": "2026-03-03T01:51:46.200Z",
+    "lastLogin": "2026-03-03T01:51:46.200Z"
+  },
+  {
+    "_id": "b55f2deea649379b",
+    "email": "endtoend1772502768@test.com",
+    "password": "$2a$12$pSNoPpuXPZKob0Du487Ka.JRQhEb0FlreyowJTawFBAglT35Ij0su",
+    "firstName": "E2E",
+    "lastName": "Test",
+    "phone": null,
+    "userType": "registered",
+    "isVerified": false,
+    "isActive": true,
+    "language": "it",
+    "settings": {
+      "notifications": true,
+      "emailNotifications": true,
+      "theme": "light",
+      "language": "it",
+      "privacy": {
+        "showEmail": false,
+        "showPhone": false,
+        "showProjects": true
+      }
+    },
+    "createdAt": "2026-03-03T01:52:49.072Z",
+    "updatedAt": "2026-03-03T01:52:49.084Z",
+    "lastLogin": "2026-03-03T01:52:49.084Z"
+  },
+  {
+    "_id": "b2e15e0890154dfb",
+    "email": "newuser1772502949@test.com",
+    "password": "$2a$12$OBLKr5Y6Aeqo/WPN5BgB4ej.dne2FG9TCo41D9WU3INXvwXBXRUIm",
+    "firstName": "New",
+    "lastName": "User",
+    "phone": null,
+    "userType": "registered",
+    "isVerified": false,
+    "isActive": true,
+    "language": "it",
+    "settings": {
+      "notifications": true,
+      "emailNotifications": true,
+      "theme": "light",
+      "language": "it",
+      "privacy": {
+        "showEmail": false,
+        "showPhone": false,
+        "showProjects": true
+      }
+    },
+    "createdAt": "2026-03-03T01:55:49.439Z",
+    "updatedAt": "2026-03-03T01:55:49.450Z",
+    "lastLogin": "2026-03-03T01:55:49.450Z"
+  },
+  {
+    "_id": "4a3ae0088787312c",
+    "email": "marco.neri.test@test.it",
+    "password": "$2a$12$LC4f8GolVv84sCADv5eDaejWlQkDvXF9ij4dkwfVFLKC3Fyezyrp.",
+    "firstName": "Marco",
+    "lastName": "Neri",
+    "phone": null,
+    "userType": "registered",
+    "isVerified": false,
+    "isActive": true,
+    "language": "it",
+    "settings": {
+      "notifications": true,
+      "emailNotifications": true,
+      "theme": "light",
+      "language": "it",
+      "privacy": {
+        "showEmail": false,
+        "showPhone": false,
+        "showProjects": true
+      }
+    },
+    "createdAt": "2026-03-03T16:59:27.052Z",
+    "updatedAt": "2026-03-03T16:59:27.054Z",
+    "lastLogin": "2026-03-03T16:59:27.054Z"
+  }
+]

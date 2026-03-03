@@ -1,0 +1,52 @@
+[
+  {
+    "_id": "b8b7815a90dee967",
+    "title": "Nuovo Regolamento Edilizio Comunale",
+    "excerpt": "Approvate le modifiche al regolamento edilizio...",
+    "content": "Il Consiglio Comunale ha approvato importanti modifiche al regolamento edilizio che entreranno in vigore dal 1° marzo 2025. Le principali novità riguardano le procedure di approvazione per interventi di ristrutturazione e le nuove norme sulla sostenibilità energetica.",
+    "date": "2025-01-20T00:00:00.000Z",
+    "category": "Normative",
+    "author": "Segreteria Ordine",
+    "important": true,
+    "isPublished": false,
+    "createdAt": "2025-12-02T23:03:22.820Z",
+    "updatedAt": "2025-12-29T14:44:55.809Z"
+  },
+  {
+    "_id": "37e911dade2540c2",
+    "title": "Assemblea Generale degli Iscritti",
+    "excerpt": "Convocazione assemblea ordinaria per il 28 febbraio...",
+    "content": "È convocata l'assemblea generale degli iscritti per discutere il bilancio consuntivo 2024 e le attività programmate per il 2025. L'assemblea si terrà presso la sede dell'Ordine alle ore 15:00.",
+    "date": "2025-01-18T00:00:00.000Z",
+    "category": "Assemblee",
+    "author": "Presidente Ordine",
+    "important": true,
+    "isPublished": true,
+    "createdAt": "2025-12-02T23:03:22.820Z"
+  },
+  {
+    "_id": "75cac1260723e0ec",
+    "title": "Bando Concorso Progettazione Piazza Garibaldi",
+    "excerpt": "Pubblicato il bando per la riqualificazione...",
+    "content": "Il Comune di Caltanissetta ha pubblicato il bando per il concorso di progettazione della nuova Piazza Garibaldi. La scadenza per la presentazione delle proposte è fissata al 30 aprile 2025.",
+    "date": "2025-01-15T00:00:00.000Z",
+    "category": "Concorsi",
+    "author": "Redazione",
+    "important": false,
+    "isPublished": true,
+    "createdAt": "2025-12-02T23:03:22.820Z"
+  },
+  {
+    "_id": "47873c4f0cd70d01",
+    "title": "Test News da Admin",
+    "excerpt": "Questa � una news di test",
+    "content": "Contenuto completo della news di test creata dal pannello admin.",
+    "date": "2025-12-29T14:44:50.455Z",
+    "category": "Test",
+    "author": "Admin Test",
+    "important": false,
+    "isPublished": true,
+    "createdAt": "2025-12-29T14:44:50.455Z",
+    "updatedAt": "2025-12-29T14:44:50.455Z"
+  }
+]
