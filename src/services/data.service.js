@@ -720,31 +720,3 @@ module.exports = {
   // Costanti
   DATA_FILES
 };
-
-// ─── AUTO-SWITCH A MONGODB SE DISPONIBILE ────────────────────────────────────
-// Se MONGODB_URI è configurato E mongoose è connesso, esporta il servizio MongoDB
-// invece di quello JSON. In questo modo tutti i controller funzionano senza modifiche.
-const { isMongoConnected } = require('../config/db');
-const mongoService = require('./mongodb.service');
-
-// Proxy dinamico: usa MongoDB se connesso, altrimenti JSON
-const createProxy = (jsonService, mongoService) => {
-  return new Proxy(jsonService, {
-    get(target, prop) {
-      if (isMongoConnected() && mongoService[prop] !== undefined) {
-        return mongoService[prop];
-      }
-      return target[prop];
-    }
-  });
-};
-
-module.exports.Users = createProxy(module.exports.Users, mongoService.Users);
-module.exports.Architects = createProxy(module.exports.Architects, mongoService.Architects);
-module.exports.ActivationTokens = createProxy(module.exports.ActivationTokens, mongoService.ActivationTokens);
-module.exports.Courses = createProxy(module.exports.Courses, mongoService.Courses);
-module.exports.News = createProxy(module.exports.News, mongoService.News);
-module.exports.Messages = createProxy(module.exports.Messages, mongoService.Messages);
-module.exports.Conversations = createProxy(module.exports.Conversations, mongoService.Conversations);
-module.exports.Enrollments = createProxy(module.exports.Enrollments, mongoService.Enrollments);
-module.exports.Notifications = createProxy(module.exports.Notifications, mongoService.Notifications);
