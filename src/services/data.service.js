@@ -720,3 +720,30 @@ module.exports = {
   // Costanti
   DATA_FILES
 };
+
+// ─── AUTO-SWITCH A MONGODB SE DISPONIBILE ────────────────────────────────────
+// Usa mongodb-sync.service.js che ha la stessa API sincrona del JSON service
+// ma persiste i dati su MongoDB. I controller NON necessitano di await.
+const mongoSyncService = require('./mongodb-sync.service');
+
+// Proxy dinamico: usa MongoDB sync se inizializzato, altrimenti JSON
+const createProxy = (jsonService, mongoCollection) => {
+  return new Proxy(jsonService, {
+    get(target, prop) {
+      if (mongoSyncService.isInitialized() && mongoCollection[prop] !== undefined) {
+        return mongoCollection[prop];
+      }
+      return target[prop];
+    }
+  });
+};
+
+module.exports.Users = createProxy(module.exports.Users, mongoSyncService.Users);
+module.exports.Architects = createProxy(module.exports.Architects, mongoSyncService.Architects);
+module.exports.ActivationTokens = createProxy(module.exports.ActivationTokens, mongoSyncService.ActivationTokens);
+module.exports.Courses = createProxy(module.exports.Courses, mongoSyncService.Courses);
+module.exports.News = createProxy(module.exports.News, mongoSyncService.News);
+module.exports.Messages = createProxy(module.exports.Messages, mongoSyncService.Messages);
+module.exports.Conversations = createProxy(module.exports.Conversations, mongoSyncService.Conversations);
+module.exports.Enrollments = createProxy(module.exports.Enrollments, mongoSyncService.Enrollments);
+module.exports.Notifications = createProxy(module.exports.Notifications, mongoSyncService.Notifications);
