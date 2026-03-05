@@ -10,6 +10,18 @@ const startServer = async () => {
   // Connessione MongoDB (se MONGODB_URI configurato, altrimenti usa JSON)
   await connectDB();
 
+  // Se MongoDB è connesso, inizializza la cache sync (migra da JSON se necessario)
+  const { isMongoConnected } = require('./src/config/db');
+  if (isMongoConnected()) {
+    try {
+      const mongoSyncService = require('./src/services/mongodb-sync.service');
+      await mongoSyncService.initialize(config.dataDir);
+    } catch (e) {
+      console.error('⚠️  Errore inizializzazione MongoDB sync:', e.message);
+      console.log('⚠️  Fallback a file JSON locali');
+    }
+  }
+
   const server = app.listen(config.port, () => {
     console.log('');
     console.log('╔═══════════════════════════════════════════════════════════╗');
