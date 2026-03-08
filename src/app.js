@@ -35,13 +35,15 @@ app.use(cors({
       'http://localhost:3000',
       'http://127.0.0.1:3000',
       'http://localhost:5000',
-      'http://127.0.0.1:5000'
+      'http://127.0.0.1:5000',
+      'https://emanuele1205.github.io',
+      'https://app-calcolatrice.vercel.app'
     ];
-    
+
     if (!origin || allowedOrigins.indexOf(origin) !== -1) {
       callback(null, true);
     } else {
-      callback(new Error('Not allowed by CORS'));
+      callback(null, true); // Permetti tutte le origini in produzione
     }
   },
   credentials: true,
