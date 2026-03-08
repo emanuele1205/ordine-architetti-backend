@@ -16,7 +16,7 @@ const authenticateAdmin = (req, res, next) => {
     const token = authHeader.substring(7);
     const decoded = jwt.verify(token, authConfig.jwt.secret);
 
-    if (decoded.userType !== 'admin') {
+    if (decoded.role !== 'admin' && decoded.userType !== 'admin') {
       return res.status(403).json({
         success: false,
         message: 'Privilegi amministratore richiesti'
@@ -26,7 +26,7 @@ const authenticateAdmin = (req, res, next) => {
     req.admin = {
       id: decoded.id,
       email: decoded.email,
-      role: decoded.userType
+      role: decoded.role || decoded.userType
     };
 
     next();
