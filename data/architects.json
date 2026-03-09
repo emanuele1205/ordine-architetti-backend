@@ -3,7 +3,10 @@
     "_id": "arch2",
     "userId": "2",
     "orderNumber": "5678",
-    "specialties": ["Progettazione Residenziale", "BIM"],
+    "specialties": [
+      "Progettazione Residenziale",
+      "BIM"
+    ],
     "location": "Caltanissetta",
     "bio": "Architetta con esperienza nella progettazione residenziale e BIM.",
     "profileVisible": true,
@@ -13,7 +16,11 @@
     "rating": 4.9,
     "isAvailable": true,
     "isApproved": true,
-    "services": ["Progettazione", "Ristrutturazione", "Consulenza"],
+    "services": [
+      "Progettazione",
+      "Ristrutturazione",
+      "Consulenza"
+    ],
     "portfolio": [],
     "certifications": [
       "BIM Specialist",
@@ -28,7 +35,10 @@
     "_id": "ef8130b5c7bc9b24",
     "userId": "3",
     "orderNumber": "1234",
-    "specialties": ["Progettazione Commerciale", "Urbanistica"],
+    "specialties": [
+      "Progettazione Commerciale",
+      "Urbanistica"
+    ],
     "location": "Caltanissetta",
     "bio": "Architetto specializzato in progettazione commerciale e urbanistica.",
     "profileVisible": true,
@@ -38,7 +48,10 @@
     "cfpCredits": 40,
     "projects": 15,
     "rating": 4.5,
-    "services": ["Progettazione Commerciale", "Pratiche Edilizie"],
+    "services": [
+      "Progettazione Commerciale",
+      "Pratiche Edilizie"
+    ],
     "portfolio": [],
     "certifications": [],
     "createdAt": "2025-12-10T11:47:53.387Z",

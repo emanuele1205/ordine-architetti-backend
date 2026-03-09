@@ -346,8 +346,8 @@ const approveArchitect = (req, res, next) => {
       isActive: true
     });
 
-    // Rendi profilo visibile
-    Architects.update(id, { profileVisible: true });
+    // Approva e rendi profilo visibile
+    Architects.update(id, { isApproved: true, profileVisible: true });
 
     console.log('✅ Admin: Architetto approvato:', architect.userId);
 
