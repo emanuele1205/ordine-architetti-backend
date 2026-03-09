@@ -9,8 +9,8 @@ const { sanitizeUser, paginate, generateId } = require('../utils/helpers');
 // Admin predefinito
 const ADMIN_USER = {
   id: 'admin-default-001',
-  email: 'admin@caltanissetta.it',
-  password: '$2a$10$AXm2iT0Dt88isR9eK9L6o.8NQSJ8NKKSeiV3Fo/VEiHGQQOjZRoiG', // AdminPassword123!
+  email: 'admin@ordinearchitetti.cl.it',
+  password: '$2b$10$zH0q2RP3AYYBGmlJGqYpbegRs2ub1QbaWk7tMkWbAw74yImIUSPF6', // Admin2024!
   firstName: 'Amministratore',
   lastName: 'Sistema',
   role: 'admin'
