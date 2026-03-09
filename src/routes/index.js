@@ -50,11 +50,13 @@ router.get('/', (req, res) => {
  * @access  Public
  */
 router.get('/health', (req, res) => {
+  const { isMongoConnected } = require('../config/db');
   res.json({
     success: true,
     status: 'healthy',
     timestamp: new Date().toISOString(),
-    uptime: process.uptime()
+    uptime: process.uptime(),
+    database: isMongoConnected() ? 'mongodb' : 'json-files'
   });
 });
 
