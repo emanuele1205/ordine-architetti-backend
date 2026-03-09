@@ -66,51 +66,62 @@
     "updatedAt": "2025-12-27T19:36:28.932Z"
   },
   {
+    "_id": "test001token000001",
     "token": "ARCH-TOKEN-2025-001",
     "orderNumber": "2001",
     "architectName": "Test Architect 4",
     "email": null,
     "used": false,
     "createdAt": "2025-12-11T18:00:00.000Z",
-    "expiresAt": "2026-12-31T00:00:00.000Z"
+    "expiresAt": "2026-12-31T00:00:00.000Z",
+    "updatedAt": "2025-12-11T18:00:00.000Z"
   },
   {
+    "_id": "test002token000002",
     "token": "ARCH-TOKEN-2025-002",
     "orderNumber": "2002",
     "architectName": "Test Architect 5",
     "email": null,
     "used": false,
     "createdAt": "2025-12-11T18:00:00.000Z",
-    "expiresAt": "2026-12-31T00:00:00.000Z"
+    "expiresAt": "2026-12-31T00:00:00.000Z",
+    "updatedAt": "2025-12-11T18:00:00.000Z"
   },
   {
+    "_id": "test003token000003",
     "token": "ARCH-TOKEN-2025-003",
     "orderNumber": "2003",
     "architectName": "Test Architect 6",
     "email": null,
     "used": false,
     "createdAt": "2025-12-11T18:00:00.000Z",
-    "expiresAt": "2026-12-31T00:00:00.000Z"
+    "expiresAt": "2026-12-31T00:00:00.000Z",
+    "updatedAt": "2025-12-11T18:00:00.000Z"
   },
   {
+    "_id": "test004token000004",
     "token": "ARCH-TOKEN-2025-004",
     "orderNumber": "2004",
     "architectName": "Test Architect 7",
     "email": null,
     "used": false,
     "createdAt": "2025-12-11T18:00:00.000Z",
-    "expiresAt": "2026-12-31T00:00:00.000Z"
+    "expiresAt": "2026-12-31T00:00:00.000Z",
+    "updatedAt": "2025-12-11T18:00:00.000Z"
   },
   {
+    "_id": "test005token000005",
     "token": "ARCH-TOKEN-2025-005",
     "orderNumber": "2005",
     "architectName": "Test Architect 8",
     "email": null,
     "used": false,
     "createdAt": "2025-12-11T18:00:00.000Z",
-    "expiresAt": "2026-12-31T00:00:00.000Z"
+    "expiresAt": "2026-12-31T00:00:00.000Z",
+    "updatedAt": "2025-12-11T18:00:00.000Z"
   },
   {
+    "_id": "devtoken5678used01",
     "token": "DEV-TOKEN-5678",
     "orderNumber": "5678",
     "architectName": "Test Architect 2",
@@ -119,9 +130,11 @@
     "createdAt": "2025-12-11T12:00:00.000Z",
     "expiresAt": "2025-12-31T00:00:00.000Z",
     "usedBy": "5068a357bb497923",
-    "usedAt": "2025-12-11T16:38:47.819Z"
+    "usedAt": "2025-12-11T16:38:47.819Z",
+    "updatedAt": "2025-12-11T16:38:47.819Z"
   },
   {
+    "_id": "devtoken9999used02",
     "token": "DEV-TOKEN-9999",
     "orderNumber": "9999",
     "architectName": "Test Architect 3",
@@ -130,9 +143,11 @@
     "createdAt": "2025-12-11T12:00:00.000Z",
     "expiresAt": "2025-12-31T00:00:00.000Z",
     "usedBy": "d8c7eebae6cc0cb7",
-    "usedAt": "2025-12-11T17:22:22.858Z"
+    "usedAt": "2025-12-11T17:22:22.858Z",
+    "updatedAt": "2025-12-11T17:22:22.858Z"
   },
   {
+    "_id": "devtoken1234used03",
     "token": "DEV-TOKEN-1234",
     "orderNumber": "1234",
     "architectName": "Test Arch",
@@ -141,6 +156,7 @@
     "createdAt": "2025-10-01T10:48:56.929Z",
     "expiresAt": "2025-12-31T00:00:00.000Z",
     "usedBy": "3",
-    "usedAt": "2025-12-10T11:47:53.388Z"
+    "usedAt": "2025-12-10T11:47:53.388Z",
+    "updatedAt": "2025-12-10T11:47:53.388Z"
   }
 ]

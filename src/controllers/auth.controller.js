@@ -228,8 +228,9 @@ const activateArchitect = async (req, res, next) => {
       });
     }
 
-    // Verifica che il numero ordine corrisponda
-    if (tokenRecord.orderNumber !== orderNumber) {
+    // Verifica che il numero ordine corrisponda (solo se il token ha un ordine associato)
+    // I token batch hanno orderNumber vuoto: l'utente può usare qualsiasi numero ordine
+    if (tokenRecord.orderNumber && tokenRecord.orderNumber !== orderNumber) {
       return res.status(HTTP_STATUS.BAD_REQUEST).json({
         success: false,
         error: 'ORDER_MISMATCH',
@@ -254,6 +255,7 @@ const activateArchitect = async (req, res, next) => {
       profileVisible: true,
       acceptMessages: true,
       isAvailable: true,
+      isApproved: true,
       cfpCredits: 0,
       projects: 0,
       rating: null,

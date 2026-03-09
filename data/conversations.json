@@ -1,15 +1,5 @@
 [
   {
-    "_id": "df0ac7169b218cab",
-    "type": "direct",
-    "participants": [
-      "1",
-      "2"
-    ],
-    "createdAt": "2025-12-09T22:37:01.324Z",
-    "updatedAt": "2025-12-11T11:04:37.897Z"
-  },
-  {
     "_id": "4e7f3c3aebebca19",
     "type": "direct",
     "participants": [
@@ -18,15 +8,5 @@
     ],
     "createdAt": "2025-12-11T11:04:25.566Z",
     "updatedAt": "2026-03-03T16:50:41.909Z"
-  },
-  {
-    "_id": "c7a4f1b9fb968cf7",
-    "type": "direct",
-    "participants": [
-      "e30108ce495092d5",
-      "1"
-    ],
-    "createdAt": "2025-12-11T17:33:20.751Z",
-    "updatedAt": "2025-12-11T17:33:20.751Z"
   }
 ]
